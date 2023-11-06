@@ -379,7 +379,7 @@ function TodayCard({ cRef }) {
           } cursor-pointer today-card-cover absolute w-full h-full top-0`}
           style={{
             background:
-              "url('https://bu.dusays.com/2023/03/12/640dcd3a1b146.png') no-repeat center /cover"
+              "url('https://th.bing.com/th/id/R.da94ca8fb7937e25d84e4ce3ab23659f?rik=zKTniNxT4STP4g&riu=http%3a%2f%2fimgs.aixifan.com%2flive%2f1483416286974%2f1483416286974.jpg&ehk=FAfS25TIoHeSYX7HPpY3VUDxLplEWdV0Fbz0j4l48sE%3d&risl=&pid=ImgRaw&r=0') no-repeat center /cover"
           }}
         ></div>
       </div>

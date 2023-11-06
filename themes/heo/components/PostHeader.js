@@ -13,26 +13,26 @@ export default function PostHeader({ post, siteInfo }) {
   }
   // 文章头图
   const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
-
+  console.log(headerImage)
   return (
         <div id='post-bg' className="w-full h-[30rem] relative md:flex-shrink-0 overflow-hidden bg-cover bg-center bg-no-repeat z-10 mb-5">
-            <style jsx>{` 
-                .coverdiv:after {
-                    position: absolute;
-                    content: '';
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    box-shadow: 110px -130px 300px 60px #0060e0 inset;
-                }
+            <style jsx>{`
+              .coverdiv:after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                //box-shadow: 110px -130px 300px 200px #7fb0b0 inset;
+              }
             `}</style>
 
-            <div style={{ backdropFilter: 'blur(15px)' }} className={'bg-[#0060e0] absolute top-0 w-full h-full py-10 flex justify-center items-center'}>
+            <div style={{ backdropFilter: 'blur(0px)' }} className={'bg-[#7fb0b0] absolute top-0 w-full h-full py-10 flex justify-center items-center'}>
 
                 {/* 文章背景图 */}
-                <div id='post-cover-wrapper' style={{ filter: 'blur(15px)' }} className='coverdiv lg:translate-x-96 opacity-50 lg:rotate-12'>
-                    <LazyImage id='post-cover' className='w-full h-full object-cover opacity-80 max-h-[50rem] min-w-[50vw] min-h-[20rem]' src={headerImage} />
+                <div id='post-cover-wrapper' style={{ filter: 'blur(10px)' }} className='coverdiv lg:translate-x-96 opacity-50 lg:rotate-12'>
+                    <LazyImage id='post-cover' className='w-full h-full object-cover opacity-50 max-h-[50rem] min-w-[100vw] min-h-[20rem]' src={headerImage} />
                 </div>
 
                 {/* 文章文字描述 */}
